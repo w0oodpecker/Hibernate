@@ -18,10 +18,10 @@ public class Persons {
     @Id
     @Column(nullable = false, length = 3)
     private int age;
-    @Column(nullable = true, length = 11)
-    private String phone_number;
-    @Column(nullable = true, length = 255)
-    private String city_of_living;
+    @Column(name = "phone_number", nullable = true, length = 11)
+    private String phoneNumber;
+    @Column(name="city_of_living", nullable = true, length = 255)
+    private String cityOfLiving;
 
     public void setName(String name) {
         this.name = name;
@@ -35,12 +35,11 @@ public class Persons {
         this.age = age;
     }
 
-    public void setPhone_number(String phone_number) {
-        this.phone_number = phone_number;
+    public void setPhoneNumber(String phoneNumber) {this.phoneNumber = phoneNumber;
     }
 
-    public void setCity_of_living(String city_of_living) {
-        this.city_of_living = city_of_living;
+    public void setCityOfLiving(String cityOfLiving) {
+        this.cityOfLiving = cityOfLiving;
     }
 
     public int getAge() {
@@ -55,11 +54,11 @@ public class Persons {
         return surname;
     }
 
-    public String getCity_of_living() {
-        return city_of_living;
+    public String getCityOfLiving() {
+        return cityOfLiving;
     }
 
-    public String getPhone_number() {
-        return phone_number;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 }

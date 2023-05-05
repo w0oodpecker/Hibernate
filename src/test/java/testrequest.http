@@ -1,8 +1,8 @@
 ###
-GET http://localhost:8080/persons/by-city?city=Москва
-
-###
 GET http://localhost:8080/persons/by-city?city=Санкт-Петербург
 
 ###
-GET http://localhost:8080/persons/by-city?city=Приозерск
+GET http://localhost:8080/persons/by-age?age=45
+
+###
+GET http://localhost:8080/persons/by-nameandsurnameandage?name=Иван&surname=Иванов&age=25
