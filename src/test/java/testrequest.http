@@ -1,0 +1,8 @@
+###
+GET http://localhost:8080/persons/by-city?city=Москва
+
+###
+GET http://localhost:8080/persons/by-city?city=Санкт-Петербург
+
+###
+GET http://localhost:8080/persons/by-city?city=Приозерск
